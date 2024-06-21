@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Hack Regular";
+  src: url("../assets/fonts/Hack-Regular.ttf");
+}
+
+/* @font-face {
+  font-family: "Hack Bold";
+  src: url("../assets/fonts/Hack-Bold.ttf");
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hack Regular";
+}
+
+.line-b {
+  @apply border-b-2 border-dashed dark:border-green-500;
+}
+
+.line-t {
+  @apply border-t-2 border-dashed dark:border-green-500;
+}
+
+.line-y {
+  @apply border-y-2 border-dashed dark:border-green-500;
+}
+
+.typed-cursor {
+  @apply text-slate-50;
+}

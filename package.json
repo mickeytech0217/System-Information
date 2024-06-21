@@ -1,0 +1,16 @@
+{
+  "name": "sys-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/tailwind.css -o ./src/css/global.css --watch"
+  },
+  "keywords": [],
+  "author": "Lakshan Rukantha",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "tailwindcss": "^3.3.5"
+  }
+}

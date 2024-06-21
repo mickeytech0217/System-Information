@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lakshan Rukantha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="System Info | Web Based System Information Dashboard"
+    />
+    <meta
+      name="keywords"
+      content="SysInfo, Info, Device Info, Battery, Network"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="css/global.css" />
+    <title>SysInfo | Web Based System Information Dashboard</title>
+  </head>
+  <body>
+    <main class="p-4 bg-slate-800 min-h-screen">
+      <pre
+        class="leading-[8px] text-[0.6rem] sm:text-xs sm:leading-3 line-b pb-3 text-green-500"
+      >
+███████╗██╗   ██╗███████╗██╗███╗   ██╗███████╗ ██████╗ 
+██╔════╝╚██╗ ██╔╝██╔════╝██║████╗  ██║██╔════╝██╔═══██╗
+███████╗ ╚████╔╝ ███████╗██║██╔██╗ ██║█████╗  ██║   ██║
+╚════██║  ╚██╔╝  ╚════██║██║██║╚██╗██║██╔══╝  ██║   ██║
+███████║   ██║   ███████║██║██║ ╚████║██║     ╚██████╔╝ <span class="text-red-500">(v1.0.0)</span>
+╚══════╝   ╚═╝   ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝      ╚═════╝ 
+</pre>
+      <div class="my-2 line-b pb-2 text-sm md:text-base">
+        <span class="text-red-500"
+          >sysinfo:~<span class="text-green-500">$</span></span
+        >
+        <span id="dynamic-status" class="text-slate-50"></span>
+      </div>
+      <div id="terminal">
+        <!-- Command input and output will be re-rendered here -->
+      </div>
+    </main>
+    <!-- Main JS File -->
+    <script src="js/main.js"></script>
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      const typed = new Typed("#dynamic-status", {
+        strings: [
+          "sysinfo: For system info",
+          "battery: For battery info",
+          "network: For network info",
+          "weather: For weather info",
+          "dns: For DNS info",
+          "domain: For domain info",
+          "help: For more information",
+          "clear: To clear the screen",
+        ],
+        typeSpeed: 50,
+        backSpeed: 10,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
